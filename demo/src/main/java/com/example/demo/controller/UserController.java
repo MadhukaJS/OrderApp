@@ -16,7 +16,7 @@ public class UserController {
     public String getuser(){
         return "userone";
     }
-    @PostMapping("/saveuser") 
+    @PostMapping("/saveuser")
     public CusDTO saveUser(@RequestBody CusDTO cusDTO){
         return cusService.saveUser(cusDTO);
 //        return "user saved";
